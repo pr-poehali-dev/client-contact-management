@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "name": "Get clients list",
+      "method": "GET",
+      "path": "/?entity=clients",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get stats",
+      "method": "GET",
+      "path": "/?entity=clients&action=stats",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get interactions",
+      "method": "GET",
+      "path": "/?entity=interactions",
+      "expectedStatus": 200,
+      "bodyMatcher": "partial"
+    }
+  ]
+}
